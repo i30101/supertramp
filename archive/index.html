@@ -19,17 +19,9 @@
 </head>
 <body>
     <div class="" id="main-content">
-        <!-- <div class="entry" id="intro-entry">
-            <div id="title">Supertramp</div>
-            <a href="#day-1" id="intro-link">Learn More</a>
-        </div> -->
-
-        <!-- <div class="container entry" id="day-1">
-            Day 1
-        </div> -->
         <div class="row" id="main-row">
             <div class="column-container col-xs-12 col-sm-12 col-md-3" id="col1">
-                <div class="col-subcontainer" id="day">Day 1 / 113</div>
+                <div data-aos="fade-up" data-aos-duration="1000" class="col-subcontainer" id="day">Day 1 / 113</div>
                 <div class="col-subcontainer" id="health-container">
                     <div class="heading">Health</div>
 
@@ -42,9 +34,15 @@
                     <progress id="spiritual" value="100" max="100"></progress>
                     <label for="spiritual">Spiritual</label>
                 </div>
+                <button class="col-subcontainer" id="view-journal">View the Journal</button>
+                <button class="col-subcontainer" id="view-journal">Start Over</button>
             </div>
             <div class="column-container col-xs-12 col-sm-12 col-md-6" id="col2">
-                <div class="col-subcontainer" id="dialogue-container">Column</div>
+                <div class="col-subcontainer" id="dialogue-container">
+                    Welcome to <em>Supertramp</em>, an interactive retelling of Chris McCandless's journey into the Alaskan wilderness based on John Krakauer's novel <em>Into the Wild</em>. In this experience, you will be able to undergo the physical and emotional development of Christopher Johnson McCandless as he spent over sixteen weeks in the wild.<br><br>
+                    Krakauer's retelling of McCandless's story was fragmented, and his explanation for McCandless's daily actions were spread throughout the book. However, with this interactive journey, you will be able to understand all of McCandless and his actions for each step of his journey.<br><br>
+                    On the left, you will see how long McCandless has spent in the wild and his current health. On the right, you will see his journal entries, providing you with Chris's unaltered words. You can start over or view McCandless's full journal anytime.
+                </div>
                 <div class="col-subcontainer row" id="nav-container">
                     <button class="col-6 option" id="previous">Previous</button>
                     <button class="col-6 option" id="next">Next</button>
@@ -59,5 +57,7 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

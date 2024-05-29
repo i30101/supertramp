@@ -57,6 +57,16 @@ body {
     font-family: 'JetBrains Mono';
 }
 
+button {
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: border 0.5s ease;
+    width: 100%;
+}
+
+button:hover {
+    border: 2px solid rgb(75, 75, 75);
+}
+
 
 /* **************** Column 1 **************** */
 #day {
@@ -72,10 +82,8 @@ body {
 progress {
     color: lightblue;
     background: purple;
-    /* border-radius: 50%; */
 }
 
-  
 progress::-moz-progress-bar {
     background: lightblue;
 }
@@ -94,9 +102,11 @@ progress::-webkit-progress-bar {
 
 
 
+
+
 /* **************** Column 2 **************** */
 #dialogue-container {
-    /* height: 215%; */
+    height: calc(100vh - 155px)
 }
 
 #nav-container {
@@ -118,13 +128,6 @@ progress::-webkit-progress-bar {
     width: calc(50% - 15px);
     text-align: center;
     font-family: 'JetBrains Mono';
-    border: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    transition: border 0.5s ease;
-}
-
-.option:hover {
-    border: 2px solid rgb(155, 155, 155);
 }
 
 #previous {
@@ -136,4 +139,13 @@ progress::-webkit-progress-bar {
 #journal-text {
     font-family: 'Indie Flower';
     font-size: 30px;
+}
+
+#journal-text > * {
+    font-family: 'Indie Flower';
+    font-size: 30px;
+}
+
+img {
+    width: 50%;
 }
