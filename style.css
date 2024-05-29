@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono';
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: url("./assets/bus.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main-content {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    backdrop-filter: blur(6px);
+}
+
+
+#main-row {
+    margin: 0;
+    padding-top: 30px;
+    width: 100% !important; 
+}
+
+
+#col1 {
+    padding: 0 0 0 30px;
+}
+
+#col2 {
+    padding: 0 30px 0 30px;
+}
+
+#col3 {
+    padding: 0 30px 0 0;
+}
+
+.col-subcontainer {
+    background-color: rgba(0, 0, 0, 0.456);
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+
+.heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: 'JetBrains Mono';
+}
+
+
+/* **************** Column 1 **************** */
+#day {
+    font-size: 40px;
+    font-family: 'JetBrains Mono';
+}
+
+#health-container {
+    font-family: 'JetBrains Mono';
+    padding-bottom: 25px;
+}
+
+progress {
+    color: lightblue;
+    background: purple;
+    /* border-radius: 50%; */
+}
+
+  
+progress::-moz-progress-bar {
+    background: lightblue;
+}
+
+progress::-webkit-progress-value {
+    background: green;
+}
+
+progress::-webkit-progress-bar {
+    background: red;
+}
+
+.progress-span {
+    text-align: right;
+}
+
+
+
+/* **************** Column 2 **************** */
+#dialogue-container {
+    /* height: 215%; */
+}
+
+#nav-container {
+    max-width: 100%;
+    background-color: transparent;
+}
+
+#nav-container {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+.option {
+    background-color: rgba(0, 0, 0, 0.456);
+    color: white;
+    border-radius: 4px;
+    padding: 15px;
+    width: calc(50% - 15px);
+    text-align: center;
+    font-family: 'JetBrains Mono';
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    transition: border 0.5s ease;
+}
+
+.option:hover {
+    border: 2px solid rgb(155, 155, 155);
+}
+
+#previous {
+    margin-right: 30px;
+}
+
+
+/* **************** Column 3 **************** */
+#journal-text {
+    font-family: 'Indie Flower';
+    font-size: 30px;
+}
